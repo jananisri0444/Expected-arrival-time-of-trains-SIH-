@@ -1,6 +1,6 @@
 # Graph Neural Network Papers — Railway Delay Prediction
 
-## Indian Railways–specific (most directly relevant)
+## Indian Railways–specific (directly relevant)
 
 1. **"RSTGCN: Railway-centric Spatio-Temporal Graph Convolutional Network for Train Delay Prediction,"** arXiv:2510.01262, 2025.
    https://arxiv.org/abs/2510.01262 · https://arxiv.org/html/2510.01262 (HTML) · https://arxiv.org/pdf/2510.01262 (PDF)
@@ -22,7 +22,7 @@
    Referenced via: https://cse.iitkgp.ac.in/~abhijnan/papers/chowdhury_rail_network_delay_prediction.pdf
    Combines graph-community detection (identifying clusters of stations/sections that behave similarly) with interpretable decision-tree-style output — relevant if the project wants to cluster the network into sub-regions (e.g., by zone) before applying graph convolution, rather than treating the whole national network as one graph.
 
-## Network-Feature Studies Supporting the Graph Framing (even without full GNN architecture)
+## Network-Feature Studies Supporting the Graph Framing
 
 6. **"Predicting Delayed Trajectories Using Network Features: A Study on the Dutch Railway Network,"** arXiv:2507.11776, 2025.
    https://arxiv.org/abs/2507.11776 · https://arxiv.org/pdf/2507.11776
@@ -31,7 +31,7 @@
 7. **F. Corman, P. Kecman**, "Stochastic Prediction of Train Delays in Real-Time Using Bayesian Networks," *Transportation Research Part C: Emerging Technologies*, vol. 95, pp. 599–615, 2018.
    Bayesian-network (a different graphical-model family, not a GNN) approach to real-time delay prediction — useful as a lighter-weight graphical alternative if full GNN training data/compute isn't available, and directly informs the uncertainty-propagation logic across a network structure.
 
-## Bibliography Entries Found via RSTGCN's Own Reference List (worth reading for further depth)
+## Bibliography Entries Found via RSTGCN's Own Reference List
 
 8. **J. Li, X. Xu, X. Ding, J. Liu, B. Ran**, "Bayesian Spatio-Temporal Graph Convolutional Network for Railway Train Delay Prediction," *IEEE Transactions on Intelligent Transportation Systems*, 2024.
    Combines Bayesian uncertainty estimation directly into a spatio-temporal GCN — a strong candidate architecture reference for this project's uncertainty-band requirement within a graph model (rather than bolting on separate quantile-regression models as in the non-graph approach).
